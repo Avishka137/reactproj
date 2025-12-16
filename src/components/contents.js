@@ -1,6 +1,5 @@
 import React from 'react'
 import './content.css'
-
 export default function contents() {
   return (
     <div className='para1'>
