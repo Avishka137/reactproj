@@ -12,7 +12,7 @@ export default function Home() {
           <p>This is the next topic</p>
         </TopicBox>
         <TopicBox js = 'Express JS'>
-          <p>This is the final topic</p>
+          <p>This is the final topic</p >
         </TopicBox>
         <Contents/> 
     </div>
