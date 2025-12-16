@@ -2,7 +2,6 @@
     color:azure;
     color: rgb(6, 6, 6);
     -webkit-text-stroke:1px black;
-    text-stroke: 1px black;
     text-shadow: 0.5px 0px 0.5px rgba(0, 0, 0, 0.5);
     text-align: center;
     margin-bottom: 30px;
@@ -13,4 +12,10 @@ body{
     width: 80%; 
     max-width: 1000px; 
     margin: 0 auto 30px auto;
+}
+.txt{
+    font-size: 20px;
+    font-family: roboto;
+    color:blue;
+    margin-left:'12px';
 }

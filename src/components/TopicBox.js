@@ -1,12 +1,12 @@
 import React from 'react'
 import './topicbox.css'
 
-export default function TopicBox() {
-  const top = "AV@Rjs"
+export default function TopicBox(props) {
   return (
-    <div>
+    <div> 
         <div className='topicBox'>
-            <center><h1> {top}</h1></center>
+            <p className='txt'> One is {props.js} </p>
+            {props.children}
         </div>
     </div>
   )
