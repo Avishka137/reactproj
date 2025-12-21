@@ -5,6 +5,7 @@ import Contact from './pages/contact';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import{useState} from 'react';
 import Accordion from 'react-bootstrap/Accordion';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   const [count,setCount]= useState(0);
@@ -40,7 +41,7 @@ function App() {
     <span>
       My Counter
     </span>
-    <p className = 'sub'>Count is {count} </p>
+    <p className = 'sub'>Count is : {count} </p>
     <button className = 'btn1' onClick={increment}>+</button>
     <button className = 'btn2' onClick={decrement}>-</button>
 
