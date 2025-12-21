@@ -6,8 +6,10 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import{useState} from 'react';
 import Accordion from 'react-bootstrap/Accordion';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import ProgressBar from 'react-bootstrap/ProgressBar';
 
 function App() {
+  
   const [count,setCount]= useState(0);
 
   const increment = () => {
@@ -20,6 +22,7 @@ function App() {
     console.log("Decremented:", count);
   };  
   return (  
+    
     <div>
     <Router>
         {/* Navigation Menu */}
@@ -44,7 +47,7 @@ function App() {
     <p className = 'sub'>Count is : {count} </p>
     <button className = 'btn1' onClick={increment}>+</button>
     <button className = 'btn2' onClick={decrement}>-</button>
-
+    
     <Accordion defaultActiveKey="0">
       <Accordion.Item eventKey="0">
         <Accordion.Header>The USA</Accordion.Header>
@@ -59,6 +62,8 @@ function App() {
         </Accordion.Body>
       </Accordion.Item>
     </Accordion>
+    <ProgressBar animated now={55} />;
+    
     </div>
   );
 }
