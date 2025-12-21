@@ -3,17 +3,18 @@ import Home from './pages/home';
 import About from './pages/About';
 import Contact from './pages/contact';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import{useState} from 'react';
 
 function App() {
-  let count = 0;
+  const [count,setCount]= useState(0);
 
   const increment = () => {
-    count += 1; 
+    setCount(count + 1); 
     console.log("Incremented:", count);
   };
 
   const decrement = () => {
-    count -= 1; 
+    setCount(count - 1); 
     console.log("Decremented:", count);
   };  
   return (  
@@ -38,9 +39,9 @@ function App() {
     <span>
       My Counter
     </span>
-    <p>Count is {count} </p>
-    <button onClick={increment}>+</button>
-    <button onClick={decrement}>-</button>
+    <p className = 'sub'>Count is {count} </p>
+    <button className = 'btn1' onClick={increment}>+</button>
+    <button className = 'btn2' onClick={decrement}>-</button>
     </div>
   );
 }

@@ -1,0 +1,59 @@
+.sub {
+  font-size: 24px;
+  font-weight: 600;
+  color: #333;
+  margin: 20px 0;
+  padding: 15px 30px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn1 {
+  background-color: #10b981;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 10px;
+  box-shadow: 0 4px 6px rgba(16, 185, 129, 0.3);
+  transition: all 0.3s ease;
+}
+
+.btn1:hover {
+  background-color: #059669;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(16, 185, 129, 0.4);
+}
+
+.btn1:active {
+  transform: translateY(0);
+}
+
+.btn2 {
+  background-color: #ef4444;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 10px;
+  box-shadow: 0 4px 6px rgba(239, 68, 68, 0.3);
+  transition: all 0.3s ease;
+}
+
+.btn2:hover {
+  background-color: #dc2626;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(239, 68, 68, 0.4);
+}
+
+.btn2:active {
+  transform: translateY(0);
+}
