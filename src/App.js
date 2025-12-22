@@ -2,7 +2,7 @@ import './App.css';
 import Home from './pages/home'; 
 import About from './pages/About';
 import Contact from './pages/contact';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Link, BrowserRouter } from 'react-router-dom';
 import{useState} from 'react';
 import Accordion from 'react-bootstrap/Accordion';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -64,6 +64,15 @@ function App() {
     </Accordion>
     <ProgressBar animated now={55} />;
     
+
+    <BrowserRouter>
+        <Routes>
+          <Route path="/home" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} /> 
+        </Routes>
+    </BrowserRouter>
+
     </div>
   );
 }
